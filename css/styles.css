@@ -1,0 +1,251 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    height: 6vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+#loja {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 2rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid white;
+}
+
+header h1 {
+    font-family: "Lobster", sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+#carrinho-icon {
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-right: 25px;
+    align-items: center;
+}
+
+#carrinho-count {
+    background-color: red;
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 0.75em;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.menu-item {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-item div img {
+    width: 9rem;
+    border-radius: 10%;
+}
+
+.menu-item:hover {
+    background-color: #f0f0f0;
+}
+
+.carrinho-item, .resumo-item {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+#notificacao {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+main {
+    margin: 0 10px 0 10px;
+    padding-top: 8vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#banner {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Define a altura do banner */
+    overflow: hidden;
+    margin-top: 2vh;
+}
+
+#banner img {
+    width: 100%;
+    height: 100%; /* Garante que as imagens preencham a altura do banner */
+    background-size: auto;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transition: transform 1s ease-in-out;
+}
+
+#banner img.active {
+    left: 0;
+    transform: translateX(0);
+}
+
+#banner img.next {
+    left: 100%;
+    transform: translateX(0);
+}
+
+#banner img.prev {
+    left: -100%;
+    transform: translateX(0);
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.363);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+main h2 {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center ;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+#selecao {
+    font-family: "Lobster", sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.ingredientes {
+    margin-top: 0;
+    font-family: "Roboto Serif", serif;
+    font-size: .8rem;
+}
+
+.valorr {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+
+
+/* ========================= CARRINHO ==================================*/
+
+.voltarcarrinho {
+    margin-right: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#carrinho p {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    color: #3b392d;
+}
+
+.carrinho-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.carrinho-item p {
+    margin: 5px 0 0 0;
+}
+
+.carrinho-item button {
+    margin-top: 30px;
+    padding: 15px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#btnconfirmar {
+    padding: 15px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 40%;
+    float: right; /* Adiciona essa linha */
+}
+
+
+/* ========================= TELA DE ITENS ==================================*/
+

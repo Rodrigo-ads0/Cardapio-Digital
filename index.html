@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburgueria</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+</head>
+<body onload="atualizarIconeCarrinho()">
+    <header>
+        <div id="loja">
+            <img id="logo" src="imgs/logo.jpg" alt="">
+            <h1>Hilsade Hamburgueria</h1>
+        </div>
+
+        <div id="carrinho-icon" onclick="irParaCarrinho()">
+            🛒 <span id="carrinho-count">0</span>
+        </div>
+    </header>
+
+    <main>
+
+        <div id="banner">
+            <img src="imgs/1.jpg" alt="" class="active">
+            <img src="imgs/2.png" alt="">
+            <img src="imgs/3.png" alt="">
+            <img src="imgs/4.png" alt="">
+            <button class="nav-button prev-button" onclick="prevImage()">&#10094;</button>
+            <button class="nav-button next-button" onclick="nextImage()">&#10095;</button>
+        </div>
+
+        <h2>Nosso Cardápio</h2>
+        
+        <div id="hamburgueres">
+            <p id="selecao">
+                Hamburgueres:
+            </p>
+
+            <div class="menu-item" onclick="selecionarHamburguer(1)">
+                <div>
+                    <h3>Hamburguer Clássico</h3>
+                    <p class="ingredientes">Pão, queijo, presunto e ovo</p>
+                    <p class="valorr">R$ 25,00</p>
+                </div>
+
+                <div>
+                    <img src="imgs/hamburguer.jpg" alt="Hamburguer Clássico">
+                </div>
+            </div>
+            <div class="menu-item" onclick="selecionarHamburguer(2)">
+                <div>
+                    <h3>Hamburguer Clássico</h3>
+                    <p class="ingredientes">Pão, queijo, presunto e ovo</p>
+                    <p class="valorr">R$ 20,00</p>
+                </div>
+                
+                <div>
+                    <img src="imgs/hamburguer.jpg" alt="Hamburguer Clássico">
+                </div>
+            </div>
+            <div class="menu-item" onclick="selecionarHamburguer(3)">
+                <div>
+                    <h3>Hamburguer Clássico</h3>
+                    <p class="ingredientes">Pão, queijo, presunto e ovo</p>
+                    <p class="valorr">R$ 22,00</p>
+                </div>
+                
+                <div>
+                    <img src="imgs/hamburguer.jpg" alt="Hamburguer Clássico">
+                </div>
+            </div>
+            <!-- Adicione mais hambúrgueres conforme necessário -->
+        </div>
+
+        <div id="bebidas">
+            <p id="selecao">
+                Bebidas:
+            </p>
+
+            <div class="menu-item" onclick="selecionarHamburguer(1)">
+                <div>
+                    <h3>Hamburguer Clássico</h3>
+                    <p class="ingredientes">Pão, queijo, presunto e ovo</p>
+                    <p class="valorr">R$ 25,00</p>
+                </div>
+
+                <div>
+                    <img src="imgs/hamburguer.jpg" alt="Hamburguer Clássico">
+                </div>
+            </div>
+            <div class="menu-item" onclick="selecionarHamburguer(2)">
+                <div>
+                    <h3>Hamburguer Clássico</h3>
+                    <p class="ingredientes">Pão, queijo, presunto e ovo</p>
+                    <p class="valorr">R$ 25,00</p>
+                </div>
+                
+                <div>
+                    <img src="imgs/hamburguer.jpg" alt="Hamburguer Clássico">
+                </div>
+            </div>
+            <div class="menu-item" onclick="selecionarHamburguer(3)">
+                <div>
+                    <h3>Hamburguer Clássico</h3>
+                    <p class="ingredientes">Pão, queijo, presunto e ovo</p>
+                    <p class="valorr">R$ 25,00</p>
+                </div>
+                
+                <div>
+                    <img src="imgs/hamburguer.jpg" alt="Hamburguer Clássico">
+                </div>
+            </div>
+            <!-- Adicione mais hambúrgueres conforme necessário -->
+        </div>
+
+        <div id="sobremesas">
+            <p id="selecao">
+                Sobremesas:
+            </p>
+
+            <div class="menu-item" onclick="selecionarHamburguer(1)">
+                <div>
+                    <h3>Hamburguer Clássico</h3>
+                    <p class="ingredientes">Pão, queijo, presunto e ovo</p>
+                    <p class="valorr">R$ 25,00</p>
+                </div>
+
+                <div>
+                    <img src="imgs/hamburguer.jpg" alt="Hamburguer Clássico">
+                </div>
+            </div>
+            <div class="menu-item" onclick="selecionarHamburguer(2)">
+                <div>
+                    <h3>Hamburguer Clássico</h3>
+                    <p class="ingredientes">Pão, queijo, presunto e ovo</p>
+                    <p class="valorr">R$ 25,00</p>
+                </div>
+                
+                <div>
+                    <img src="imgs/hamburguer.jpg" alt="Hamburguer Clássico">
+                </div>
+            </div>
+            <div class="menu-item" onclick="selecionarHamburguer(3)">
+                <div>
+                    <h3>Hamburguer Clássico</h3>
+                    <p class="ingredientes">Pão, queijo, presunto e ovo</p>
+                    <p class="valorr">R$ 25,00</p>
+                </div>
+                
+                <div>
+                    <img src="imgs/hamburguer.jpg" alt="Hamburguer Clássico">
+                </div>
+            </div>
+            <!-- Adicione mais hambúrgueres conforme necessário -->
+        </div>
+    </main>
+    
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('#banner img');
+        const totalImages = images.length;
+
+        function showImage(index) {
+            images.forEach((img, i) => {
+                img.classList.remove('active', 'next', 'prev');
+                if (i === index) {
+                    img.classList.add('active');
+                } else if (i === (index + 1) % totalImages) {
+                    img.classList.add('next');
+                } else if (i === (index - 1 + totalImages) % totalImages) {
+                    img.classList.add('prev');
+                }
+            });
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % totalImages;
+            showImage(currentIndex);
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+            showImage(currentIndex);
+        }
+
+        setInterval(nextImage, 3000);
+        showImage(currentIndex);
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

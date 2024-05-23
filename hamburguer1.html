@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburguer Clássico</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <div id="loja">
+            <img id="logo" src="imgs/logo.jpg" alt="">
+            <h1>Hilsade Hamburgueria</h1>
+        </div>
+
+        <button class="voltarcarrinho" onclick="voltar()">Voltar</button>
+    </header>
+
+    <main>
+        <h1 id="hamburguer-title">Hamburguer Clássic</h1>
+    <img src="imgs/hamburguer.jpg" alt="Hamburguer Clássico">
+    <p id="hamburguer-price">R$ 25,00</p>
+    <div id="adicionais">
+        <h2>Adicionais</h2>
+        <label><input type="checkbox" value="Bacon"> Bacon (R$ 5,00)</label><br>
+        <label><input type="checkbox" value="Queijo"> Queijo (R$ 3,00)</label>
+        <label><input type="checkbox" value="Picles"> Picles (R$ 3,00)</label>
+        <label><textarea id="observacoes" rows="4" cols="50" placeholder="Adicione suas observações aqui..."></textarea>
+        </label>
+    </div>
+    <button class="testando" onclick="adicionarAoCarrinho()">Continuar Comprando</button>
+    <button onclick="irParaCarrinhoComprar()">Ir para o carrinho</button>
+    <div id="notificacao" style="display:none;">Item adicionado ao carrinho!</div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>

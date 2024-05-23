@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <button onclick="voltar()">Voltar</button>
+    <h1>Forma de Pagamento</h1>
+    <form id="form-pagamento">
+        <label><input type="radio" name="pagamento" value="pix" required> Pix</label><br>
+        <label><input type="radio" name="pagamento" value="cartao"> Cartão na Entrega</label><br>
+        <label><input type="radio" name="pagamento" value="dinheiro"> Dinheiro</label>
+        <div id="troco" style="display:none;">
+            <label for="troco-para">Troco para:</label>
+            <input type="text" id="troco-para" name="troco-para"><br>
+        </div>
+        <button type="button" onclick="confirmarPagamento()">Confirmar</button>
+    </form>
+    <script src="js/main.js"></script>
+</body>
+</html>
